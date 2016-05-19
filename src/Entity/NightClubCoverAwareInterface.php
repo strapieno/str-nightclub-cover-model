@@ -12,8 +12,8 @@ interface NightClubCoverAwareInterface
     public function getCover();
 
     /**
-     * @param $avatar string
-     * return $this
+     * @param $cover string
+     * @return mixed
      */
     public function setCover($cover);
 }
