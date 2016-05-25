@@ -14,6 +14,9 @@ cache:
   directories:
   - "$HOME/.composer/cache"
 
+services:
+  - mongodb
+
 branches:
   only:
     - master
@@ -21,7 +24,7 @@ branches:
 
 install:
   - composer self-update && composer --version
-  - composer update --prefer-source $DEPENDENCIES
+  - composer update --ignore-platform-reqs --prefer-source $DEPENDENCIES
 
 before_script:
  - ./.travis/run.sh
@@ -34,7 +37,7 @@ after_script:
  - php vendor/bin/coveralls
 
 notifications:
-  email: antonino.visalli@gmail.com
+  email: ripaclub@gmail.com
   
 matrix:
   fast_finish: true
