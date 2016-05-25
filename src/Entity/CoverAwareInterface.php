@@ -2,9 +2,9 @@
 namespace Strapieno\NightClubCover\Model\Entity;
 
 /**
- * Interface NightClubCoverAwareInterface
+ * Interface CoverAwareInterface
  */
-interface NightClubCoverAwareInterface
+interface CoverAwareInterface
 {
     /**
      * return string

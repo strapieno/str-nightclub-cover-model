@@ -2,9 +2,9 @@
 namespace Strapieno\NightClubCover\Model\Entity;
 
 /**
- * Class NightClubCoverAwareTrait
+ * Class CoverAwareTrait
  */
-trait NightClubCoverAwareTrait
+trait CoverAwareTrait
 {
     /**
      * @var string
