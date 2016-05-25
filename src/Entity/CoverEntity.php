@@ -6,7 +6,4 @@ use ImgMan\Apigility\Entity\ImageEntity;
 /**
  * Class CoverEntity
  */
-class CoverEntity extends ImageEntity
-{
-
-}
+class CoverEntity extends ImageEntity { }
