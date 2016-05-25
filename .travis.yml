@@ -27,7 +27,6 @@ install:
   - composer update --ignore-platform-reqs --prefer-source $DEPENDENCIES
 
 before_script:
- - ./.travis/run.sh
  - mkdir -p build/coverage
 
 script:
@@ -37,7 +36,7 @@ after_script:
  - php vendor/bin/coveralls
 
 notifications:
-  email: ripaclub@gmail.com
+  email: antonino.visalli@gmail.com
   
 matrix:
   fast_finish: true
